@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Iinclude -std=c11
-SRC = src/core/apdu.c
+SRC = src/core/apdu.c src/core/transport.c src/core/logger.c src/drivers/hal_virtual.c src/main.c
 BIN = bin/cybersiphon
 
 all: $(BIN)
